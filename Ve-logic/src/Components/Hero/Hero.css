@@ -6,7 +6,7 @@
     display:flex;
     flex-direction: column;
     position:relative;
-    background: linear-gradient(135deg,#444590,#3b2f91,#089394 ) ;
+    background: var(--background) ;
 }
 
 .hero-content{
@@ -18,7 +18,7 @@
 
 .hero-title{
     padding:50px 5px;
-    font-size: 3em;
+    font-size: var(--font-size-title);
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     line-height: 1.2;
@@ -26,10 +26,8 @@
 
 .hero-subtitle{
     padding-top: 50px;
-    font-size: 1.5em;
+    font-size: var(--font-size-subtitle);
 }
-
-
 
 .hero-buttons{
     margin-top:50px;
@@ -40,26 +38,26 @@
 }
 
 .button{
-    background: linear-gradient(135deg,#089394,#b7b8fd,#3b2f91 ) ;
-    font-size: 1.2em;
+    background: var(--background) ;
+    font-size: var(--font-size-medium);
     transition:all 0.4s ease-in-out;
     cursor: pointer;
-    color:#3b2f91
+    color:#f4f3f6
 }
 
 .button:hover{
-    background: linear-gradient(115deg,#089394,#3b2f91 ,#b7b8fd,) ;
+    background: var(--background-hover) ;
     transform: scale(1.03);
     color:white;
 }
 
 .button.secondary{
     background-color: white;
-    color:#250045;
+    color:#120320;
 }
 
 .button.secondary:hover{
-    background-color: #00470f;
+    background: var(--background-hover);
     color: white;
 }
 
