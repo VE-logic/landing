@@ -6,7 +6,7 @@ import Hero from '../src/Components/Hero/Hero';
 import Proyectos from './Pages/Proyectos/Proyectos';
 import Form from '../src/Components/Form/Form';
 import Footer from '../src/Components/Footer/Footer';
-import Servicios  from './Components/Servicios/Servicios';
+import Servicios  from './Pages/Servicios/Servicios';
 
 function App() {
 
