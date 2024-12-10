@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div>
-        <h1>VE Logic</h1>
       <Header />
       <Nav/>
       <Hero/>
