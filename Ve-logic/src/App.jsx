@@ -3,9 +3,10 @@ import './App.css';
 import Nav from '../src/Components/Nav/Nav';
 import Header from '../src/Components/Header/Header';
 import Hero from '../src/Components/Hero/Hero';
-import Proyectos from '../src/Components/Proyectos/Proyectos';
+import Proyectos from './Pages/Proyectos/Proyectos';
 import Form from '../src/Components/Form/Form';
 import Footer from '../src/Components/Footer/Footer';
+import Servicios  from './Components/Servicios/Servicios';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Nav/>
       <Hero/>
+      <Servicios/>
       <Proyectos/>
       <Form/>
       <Footer/>
