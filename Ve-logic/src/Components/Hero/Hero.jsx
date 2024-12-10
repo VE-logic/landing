@@ -1,18 +1,18 @@
 import './Hero.css'
-import AnimWord from './AnimWord'
+// import AnimWord from './AnimWord'
 
 export default function Hero() {
-    const wordsTitle = [
-        'Empresa',
-        'Emprendimiento',
-        'Proyecto'
-    ];
+    // const wordsTitle = [
+    //     'Empresa',
+    //     'Emprendimiento',
+    //     'Proyecto'
+    // ];
 
-    const words = [
-        'desarrollo web',
-        'diseño UI/UX',
-        'desarrollo de Software',
-        'marketing digital']
+    // const words = [
+    //     'desarrollo web',
+    //     'diseño UI/UX',
+    //     'desarrollo de Software',
+    //     'marketing digital']
 
     return (
     <section className='hero'>
