@@ -8,6 +8,7 @@ import Proyectos from './Pages/Proyectos/Proyectos';
 import Footer from '../src/Components/Footer/Footer';
 // import Servicios  from './Pages/Servicios/Servicios';
 import Inicio from './Pages/Home/Home';
+import Contacto from './Pages/Contacto/Contacto';
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Inicio/>} />
         <Route path="/Proyectos" element={<Proyectos/>} />
-        {/* <Route path="/contacto" element={<Contacto />} /> */}
+        <Route path="/contacto" element={<Contacto />} />
       </Routes>
       
       <Footer/>
