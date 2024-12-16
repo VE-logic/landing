@@ -1,9 +1,9 @@
-import ServicioIndividual from './../../Components/ServicioIndividual/ServicioIndividual';
-import './Servicios.css'
+import ServicioIndividual from '../ServicioIndividual/ServicioIndividual';
+import './SeccionServicios.css'
 import imagen from '../../assets/imagenPrueba.png'
 
 
-const Servicios =() => {
+const SeccionServicios =() => {
   const servicio =[
     {
       id:1,
@@ -30,7 +30,7 @@ const Servicios =() => {
   ];
   return (
     <section className="servicios">
-      <h2>Página de servicios</h2>
+      <h2>Nuestros Servicios</h2>
       <div className="servicios-grid">
         {servicio.map(servicio => (
           <ServicioIndividual 
@@ -45,4 +45,4 @@ const Servicios =() => {
   );
 };
 
-export default Servicios;
+export default SeccionServicios;

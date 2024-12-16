@@ -9,6 +9,7 @@ import Footer from '../src/Components/Footer/Footer';
 // import Servicios  from './Pages/Servicios/Servicios';
 import Inicio from './Pages/Home/Home';
 import Contacto from './Pages/Contacto/Contacto';
+import Servicios from './Pages/Servicios/Servicios';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Nav/>
       <Routes>
         <Route path="/" exact element={<Inicio/>} />
+        <Route path="/Servicios" element={<Servicios/>} />
         <Route path="/Proyectos" element={<Proyectos/>} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
