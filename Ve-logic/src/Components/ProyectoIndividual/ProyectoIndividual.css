@@ -1,0 +1,25 @@
+.proyecto-card{
+    background-color: rgb(12, 12, 12);
+    padding:1rem;
+    border-radius:15px;
+    margin-bottom: 20px;
+
+}
+
+.proyecto-imagen{
+    width:100px;
+    height: 100px;
+    border-radius:20px;
+}
+
+.link{
+    cursor:pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+
+}
+
+.link:hover{
+    color: #0A74DA;
+}
