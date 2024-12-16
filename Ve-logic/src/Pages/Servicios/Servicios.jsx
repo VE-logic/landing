@@ -17,14 +17,14 @@ const Servicios =() => {
       titulo: 'Diseño UI/UX',
       subtitulo: 'Diseño',
       descripcion: 'Diseñamos interfaces de usuario (UI/UX) para aplicaciones móviles y web, siguiendo los estándares de la industria.',
-      imagen: 'fas fa-desktop',
+      imagen: imagen,
     },
     {
       id:3,
       titulo: 'Marketing Digital',
       subtitulo: 'Diseño',
       descripcion: 'Implementamos campañas de marketing digital, enfocadas en redes sociales, email marketing y SEO.',
-      imagen: 'fab fa-google',
+      imagen:imagen,
     },
 
   ];
