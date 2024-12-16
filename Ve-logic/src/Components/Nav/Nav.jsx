@@ -5,9 +5,9 @@ export default function Nav() {
     return ( 
     <nav className="nav">
             <Link to="/">Inicio</Link>
-            <Link>Servicios</Link>
+            <Link to="">Servicios</Link>
             <Link to="/proyectos">Proyectos</Link>
-            <Link>Contacto</Link>
+            <Link to="/contacto">Contacto</Link>
     </nav>
     );
 };
