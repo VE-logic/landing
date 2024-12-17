@@ -26,8 +26,8 @@ const SeccionServicios =() => {
       descripcion: 'Implementamos campañas de marketing digital, enfocadas en redes sociales, email marketing y SEO.',
       imagen:imagen,
     },
-
   ];
+  
   return (
     <section className="servicios">
       <h2>Nuestros Servicios</h2>
