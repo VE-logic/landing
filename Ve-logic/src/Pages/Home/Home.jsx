@@ -1,5 +1,5 @@
 import Hero from "../../Components/Hero/Hero";
-import SeccionServicios from "../../Components/SeccionServicio/SeccionServicios";
+import SeccionServicios from "../../Components/Servicios/SeccionServicio/SeccionServicios";
 
 
 

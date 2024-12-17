@@ -1,4 +1,4 @@
-import ProyectoIndividual from '../../Components/ProyectoIndividual/ProyectoIndividual';
+import ProyectoIndividual from '../../Components/Proyectos/ProyectoIndividual/ProyectoIndividual';
 import './Proyectos.css'
 import imagen from '../../assets/imagenPrueba.png'
 

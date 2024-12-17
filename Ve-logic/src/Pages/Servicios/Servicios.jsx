@@ -1,4 +1,4 @@
-import ServicioIndividual from './../../Components/ServicioIndividual/ServicioIndividual';
+import ServicioIndividual from '../../Components/Servicios/ServicioIndividual/ServicioIndividual';
 import './Servicios.css'
 import imagen from '../../assets/imagenPrueba.png'
 
