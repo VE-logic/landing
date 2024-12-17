@@ -1,6 +1,6 @@
 import ServicioIndividual from '../ServicioIndividual/ServicioIndividual';
 import './SeccionServicios.css'
-import imagen from '../../assets/imagenPrueba.png'
+import imagen from '../../../assets/imagenPrueba.png'
 
 
 const SeccionServicios =() => {
@@ -14,7 +14,7 @@ const SeccionServicios =() => {
     },
     {
       id:2,
-      titulo: 'Diseño UI/UX',
+      titulo: 'Desarrollo de Software',
       subtitulo: 'Diseño',
       descripcion: 'Diseñamos interfaces de usuario (UI/UX) para aplicaciones móviles y web, siguiendo los estándares de la industria.',
       imagen: imagen,

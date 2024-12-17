@@ -2,7 +2,7 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css';
 import Nav from '../src/Components/Nav/Nav';
-import Header from '../src/Components/Header/Header';
+import Header from './Components/Header/Header';
 import Proyectos from './Pages/Proyectos/Proyectos';
 // import Form from '../src/Components/Form/Form';
 import Footer from '../src/Components/Footer/Footer';
