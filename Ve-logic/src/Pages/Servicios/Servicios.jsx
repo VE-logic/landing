@@ -1,6 +1,8 @@
 import ServicioIndividual from '../../Components/Servicios/ServicioIndividual/ServicioIndividual';
 import './Servicios.css'
 import imagen from '../../assets/imagenPrueba.png'
+import DiseñoWeb from '../../Components/Servicios/DisenioWeb/DisenioWeb';
+
 
 
 const Servicios =() => {
@@ -31,6 +33,10 @@ const Servicios =() => {
   return (
     <section className="servicios">
       <h2>Página de servicios</h2>
+      <div>
+        <DiseñoWeb/>
+      </div>
+      
       <div className="servicios-grid">
         {servicio.map(servicio => (
           <ServicioIndividual 
