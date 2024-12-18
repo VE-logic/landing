@@ -1,8 +1,15 @@
+import HeroServicios from '../HeroServicios';
+import imagen from '../../../assets/imagenPrueba.png'
 
 const DisenioWeb = () => {
   return (
-    <div>
-        <h1>Holaaaa</h1>
+    <div className='DiseñoWeb-Container'>
+        <HeroServicios
+        titulo='Diseño Web'
+        descripcion='Desarrollamos sitios web profesionales y adaptados a tus necesidades.'
+        imagen={imagen}
+        />
+        
         
     </div>
   )

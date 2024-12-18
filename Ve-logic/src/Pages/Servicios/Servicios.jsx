@@ -1,52 +1,19 @@
-import ServicioIndividual from '../../Components/Servicios/ServicioIndividual/ServicioIndividual';
-import './Servicios.css'
-import imagen from '../../assets/imagenPrueba.png'
+import DesarrolloSoftware from '../../Components/Servicios/DesarrolloSoftware/DesarrolloSoftware';
 import DiseñoWeb from '../../Components/Servicios/DisenioWeb/DisenioWeb';
-
-
+import MktDigital from '../../Components/Servicios/MktDigital/MktDigital';
 
 const Servicios =() => {
-  const servicio =[
-    {
-      id:1,
-      titulo: 'Diseño Web',
-      subtitulo: 'Diseño',
-      descripcion: 'Desarrollamos sitios web profesionales y e-commerce, con diseño responsive y optimización para móviles.',
-      imagen: imagen,
-    },
-    {
-      id:2,
-      titulo: 'Diseño UI/UX',
-      subtitulo: 'Diseño',
-      descripcion: 'Diseñamos interfaces de usuario (UI/UX) para aplicaciones móviles y web, siguiendo los estándares de la industria.',
-      imagen: imagen,
-    },
-    {
-      id:3,
-      titulo: 'Marketing Digital',
-      subtitulo: 'Diseño',
-      descripcion: 'Implementamos campañas de marketing digital, enfocadas en redes sociales, email marketing y SEO.',
-      imagen:imagen,
-    },
-
-  ];
+  
   return (
     <section className="servicios">
-      <h2>Página de servicios</h2>
+      <h2>Página de Servicios</h2>
       <div>
         <DiseñoWeb/>
+        <DesarrolloSoftware/>
+        <MktDigital/>
       </div>
       
-      <div className="servicios-grid">
-        {servicio.map(servicio => (
-          <ServicioIndividual 
-          key={servicio.id} 
-          titulo={servicio.titulo}
-          subtitulo={servicio.subtitulo}
-          descripcion={servicio.descripcion}
-          imagen={servicio.imagen}/>
-        ))}
-      </div>
+      
     </section>
   );
 };

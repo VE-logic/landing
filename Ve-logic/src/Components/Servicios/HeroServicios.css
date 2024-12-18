@@ -1,0 +1,19 @@
+.hero-servicios{
+    position:relative;
+    padding: 4rem 2rem;
+    text-align:center;
+    background: var(--background) ;
+    color: #fff;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    gap: 2rem;
+    transition: background-color 0.5s ease;   
+}
+
+.imagenFondo{
+    width:20%;
+}
