@@ -1,7 +1,7 @@
 //import { useState } from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { useState} from 'react';
 import './App.css';
-import Nav from '../src/Components/Nav/Nav';
 import Header from './Components/Header/Header';
 import Proyectos from './Pages/Proyectos/Proyectos';
 // import Form from '../src/Components/Form/Form';
@@ -11,15 +11,18 @@ import Inicio from './Pages/Home/Home';
 import Contacto from './Pages/Contacto/Contacto';
 import Servicios from './Pages/Servicios/Servicios';
 
-function App() {
+const App = () => {
+  const [servicioSeleccionado, setServicioSeleccionado] = useState('');
 
   return (
     <Router>
-      <Header />
-      <Nav/>
+      <Header onServicioSeleccionado={setServicioSeleccionado} />
       <Routes>
         <Route path="/" exact element={<Inicio/>} />
-        <Route path="/Servicios" element={<Servicios/>} />
+        <Route
+          path="/servicios"
+          element={<Servicios servicioSeleccionado={servicioSeleccionado} />}
+        />
         <Route path="/Proyectos" element={<Proyectos/>} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
@@ -28,6 +31,8 @@ function App() {
       
     </Router>
   )
-}
+};
+
+
 
 export default App
