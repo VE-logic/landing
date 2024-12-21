@@ -1,17 +1,26 @@
-import Nav from '../Nav/Nav';
-import './Header.css';
-import PropTypes from 'prop-types';
+import Nav from "../Nav/Nav";
+import "./Header.css";
 
-const Header = ({ onServicioSeleccionado }) => {
+const Header = () => {
   return (
     <header className="header">
-      <Nav onServicioSeleccionado={onServicioSeleccionado} />
+      <div className="logo">
+        <a href="/">Logo</a>
+      </div>
+      <Nav />
+      <div className="social-media">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-instagram"></i>
+        </a>
+      </div>
     </header>
   );
-};
-
-Header.propTypes = {
-    onServicioSeleccionado: PropTypes.func.isRequired,
 };
 
 export default Header;

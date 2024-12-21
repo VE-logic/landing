@@ -1,43 +1,65 @@
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.menus {
     display: flex;
-    gap: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.menus li {
+    position: relative;
+}
+
+.menus a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.menus a:hover {
+    background-color: rgb(76, 145, 249);
+    border-radius: 5px;
+}
+
+.desplegable {
+    cursor: pointer;
+    position: relative;
 }
 
 .menuDesplegable {
     position: absolute;
-    top: calc(100% + 10px);
-    /* Justo debajo del elemento padre */
+    top: calc(100% + 5px);
     left: 0;
-    background-color: rgb(4, 26, 104);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    min-width: 200px;
-    padding: 0.5rem 0;
-    display: flex;
-    flex-direction: column;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.menuDesplegable.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .menuDesplegable li {
-    padding: 0.5rem 1rem;
+    padding: 8px 20px;
 }
 
-.menuDesplegable a {
-    color: rgb(76, 145, 249);
+.menuDesplegable li a {
+    color: black;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.nav {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(4, 26, 104);
-    gap: 50px;
-    padding: 10px 20px;
-    position: relative;
-}
-
-.desplegable {
-    position: relative;
+.menuDesplegable li a:hover {
+    color: rgb(76, 145, 249);
 }
