@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(4, 26, 104);
+    color: white;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: rgb(76, 145, 249);
+}

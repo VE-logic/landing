@@ -1,59 +1,55 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import './Nav.css';
+import { menuItems } from "./menuItems";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import "./Nav.css";
 
-const Nav = ({ onServicioSeleccionado }) => {
-    const [menuVisible, setMenuVisible] = useState(false);
+const Nav = () => {
+    const [visibleIndex, setVisibleIndex] = useState(null); // Índice del submenú visible
+
+    const handleMouseEnter = (index) => {
+        setVisibleIndex(index);
+    };
+
+    const handleMouseLeave = () => {
+        setVisibleIndex(null);
+    };
 
     return (
         <nav className="nav">
-            <ul>
-                <li><Link to="/">Inicio</Link></li>
-                <li
-                    className="desplegable"
-                    onMouseEnter={() => setMenuVisible(true)}
-                    onMouseLeave={() => setMenuVisible(false)}
-                >
-                    <span>Servicios</span>
-                    {menuVisible && (
-                        <ul className="menuDesplegable">
-                            <li>
-                                <Link
-                                    to="/servicios"
-                                    onClick={() => onServicioSeleccionado('diseñoWeb')}
+            <ul className="menus">
+                {menuItems.map((menu, index) => {
+                    if (menu.submenu) {
+                        return (
+                            <li
+                                key={index}
+                                className="desplegable"
+                                onMouseEnter={() => handleMouseEnter(index)}
+                                onMouseLeave={handleMouseLeave}
+                            >
+                                <span>{menu.title}</span>
+                                <ul
+                                    className={`menuDesplegable ${visibleIndex === index ? "visible" : ""
+                                        }`}
                                 >
-                                    Diseño Web
-                                </Link>
+                                    {menu.submenu.map((submenu, subIndex) => (
+                                        <li key={subIndex}>
+                                            <Link to={submenu.path}>{submenu.title}</Link>
+                                        </li>
+                                    ))}
+                                </ul>
                             </li>
-                            <li>
-                                <Link
-                                    to="/servicios"
-                                    onClick={() => onServicioSeleccionado('desarrolloWeb')}
-                                >
-                                    Desarrollo Web
-                                </Link>
+                        );
+                    } else {
+                        return (
+                            <li key={index}>
+                                <Link to={menu.path}>{menu.title}</Link>
                             </li>
-                            <li>
-                                <Link
-                                    to="/servicios"
-                                    onClick={() => onServicioSeleccionado('marketingDigital')}
-                                >
-                                    Marketing Digital
-                                </Link>
-                            </li>
-                        </ul>
-                    )}
-                </li>
-                <li><Link to="/proyectos">Proyectos</Link></li>
-                <li><Link to="/contacto">Contacto</Link></li>
+                        );
+                    }
+                })}
             </ul>
         </nav>
     );
 };
-
-Nav.PropTypes = {
-    onServicioSeleccionado: PropTypes.func.isRequired,
-}
 
 export default Nav;
