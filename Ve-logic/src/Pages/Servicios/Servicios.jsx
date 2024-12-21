@@ -1,21 +1,27 @@
-import DesarrolloSoftware from '../../Components/Servicios/DesarrolloSoftware/DesarrolloSoftware';
-import DiseñoWeb from '../../Components/Servicios/DisenioWeb/DisenioWeb';
-import MktDigital from '../../Components/Servicios/MktDigital/MktDigital';
+import PropTypes from 'prop-types'; 
+const Servicios = ({ servicioSeleccionado }) => {
+  const renderComponente = () => {
+    switch (servicioSeleccionado) {
+      case 'diseñoWeb':
+        return <h2>Diseño Web - Detalles del servicio</h2>;
+      case 'desarrolloWeb':
+        return <h2>Desarrollo Web - Detalles del servicio</h2>;
+      case 'marketingDigital':
+        return <h2>Marketing Digital - Detalles del servicio</h2>;
+      default:
+        return <h2>Selecciona un servicio para ver más detalles</h2>;
+    }
+  };
 
-const Servicios =() => {
-  
   return (
-    <section className="servicios">
-      <h2>Página de Servicios</h2>
-      <div>
-        <DiseñoWeb/>
-        <DesarrolloSoftware/>
-        <MktDigital/>
-      </div>
-      
-      
-    </section>
+    <div className="servicios-contenido">
+      {renderComponente()}
+    </div>
   );
+};
+
+Servicios.propTypes = {
+  servicioSeleccionado: PropTypes.string.isRequired,
 };
 
 export default Servicios;
