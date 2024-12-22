@@ -1,16 +1,32 @@
-import PropTypes from 'prop-types'; 
-const Servicios = ({ servicioSeleccionado }) => {
-  const renderComponente = () => {
+import { useLocation } from 'react-router-dom';
+import DisenioWeb from '../../Components/Servicios/DisenioWeb/DisenioWeb';
+import DesarrolloWeb from '../../Components/Servicios/DesarrolloSoftware/DesarrolloSoftware';
+import MarketingDigital from '../../Components/Servicios/MktDigital/MktDigital';
+import './Servicios.css';
+
+
+// Este componente muestra el detalle de un servicio seleccionado
+const Servicios = () => {
+  
+    const location = useLocation();
+
+    const queryParams = new URLSearchParams(location.search);
+    const servicioSeleccionado = queryParams.get('servicio');
+    
+
+    const renderComponente = () => {
+
     switch (servicioSeleccionado) {
-      case 'diseñoWeb':
-        return <h2>Diseño Web - Detalles del servicio</h2>;
-      case 'desarrolloWeb':
-        return <h2>Desarrollo Web - Detalles del servicio</h2>;
-      case 'marketingDigital':
-        return <h2>Marketing Digital - Detalles del servicio</h2>;
-      default:
-        return <h2>Selecciona un servicio para ver más detalles</h2>;
+      case '/disenioWeb':
+        return <DisenioWeb />;
+          
+      case '/desarrolloSoftware':
+        return <DesarrolloWeb />;
+      case '/mktDigital':
+        return <MarketingDigital />;
+      
     }
+    console.log('servicioSeleccionado', servicioSeleccionado);
   };
 
   return (
@@ -20,8 +36,6 @@ const Servicios = ({ servicioSeleccionado }) => {
   );
 };
 
-Servicios.propTypes = {
-  servicioSeleccionado: PropTypes.string.isRequired,
-};
+
 
 export default Servicios;
