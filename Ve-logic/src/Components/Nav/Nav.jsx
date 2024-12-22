@@ -1,10 +1,13 @@
 import { menuItems } from "./menuItems";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Nav.css";
 
 const Nav = () => {
     const [visibleIndex, setVisibleIndex] = useState(null); // Índice del submenú visible
+    const navigate = useNavigate();
+    
 
     const handleMouseEnter = (index) => {
         setVisibleIndex(index);
@@ -13,6 +16,13 @@ const Nav = () => {
     const handleMouseLeave = () => {
         setVisibleIndex(null);
     };
+
+    const handleServicioClick = (index, subIndex) => {
+        const servicio = menuItems[index].submenu[subIndex];
+        navigate(`/servicios?servicio=${servicio.path}`);
+        setVisibleIndex(null);
+        console.log("servicio.path", servicio.path);
+    }
 
     return (
         <nav className="nav">
@@ -32,7 +42,9 @@ const Nav = () => {
                                         }`}
                                 >
                                     {menu.submenu.map((submenu, subIndex) => (
-                                        <li key={subIndex}>
+                                        <li key={subIndex}
+                                        onClick={() => handleServicioClick(index, subIndex)}
+                                        >
                                             <Link to={submenu.path}>{submenu.title}</Link>
                                         </li>
                                     ))}

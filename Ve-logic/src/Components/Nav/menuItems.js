@@ -3,9 +3,9 @@ export const menuItems = [
     {
         title: "Servicios",
         submenu: [
-            { title: "Diseño Web", path: "/servicios/diseño-web" },
-            { title: "Desarrollo Web", path: "/servicios/desarrollo-web" },
-            { title: "Marketing Digital", path: "/servicios/marketing-digital" },
+            { title: "Diseño Web", path: "/disenioWeb" },
+            { title: "Desarrollo Web", path: "/desarrolloSoftware" },
+            { title: "Marketing Digital", path: "/mktDigital" },
         ],
     },
     {
