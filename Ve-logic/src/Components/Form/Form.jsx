@@ -1,8 +1,12 @@
-export default function Form() {
+import './Form.css';
+
+const Form = () => {
   return (
-    <div>Form</div>
+    <div>Formulario</div>
   )
 }
+
+export default Form;
 
 
 
