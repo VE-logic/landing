@@ -2,7 +2,6 @@ import './Form.css';
 import { useRef, useState } from 'react';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { SiWhatsapp } from 'react-icons/si';
-import { TbBrandTelegram } from 'react-icons/tb';
 import emailjs from '@emailjs/browser';
 
 const Form = () => {
