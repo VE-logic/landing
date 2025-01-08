@@ -1,7 +1,6 @@
 //import { useState } from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { useState} from 'react';
-import './App.css';
 import Header from './Components/Header/Header';
 import Proyectos from './Pages/Proyectos/Proyectos';
 // import Form from '../src/Components/Form/Form';
