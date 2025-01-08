@@ -1,36 +1,73 @@
-.Nav-titulo{
-    color:aqua;
-    font-size: 2rem;
-}
-
-.nav {
+.menus {
     display: flex;
-    justify-content:center;
-    background-color: white;
-    gap:50px;
-    padding: 20px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
     list-style: none;
     margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.menus li {
+    position: relative;
+}
+
+.menus a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.menus a:hover {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.desplegable {
+    cursor: pointer;
+    position: relative;
     
 }
 
-.nav-links li {
-    font-size: 1rem;
+.menuDesplegable {
+    position: absolute;
+    top: calc(100% + 5px);
+    width:max-content;
+    background-color: rgb(4, 26, 104);
+    /* color: rgb(255, 255, 255); */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    list-style: none;
+    padding: 5px 10px;
+    margin: 15px -60px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
 }
 
-.nav-links a {
+.menuDesplegable.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
+}
+
+.menuDesplegable li {
+    padding: 5px 10px;
+    
+
+    
+    
+}
+
+.menuDesplegable li a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
+    
 }
 
-.nav-links a:hover {
-    color: #0A74DA;
+.menuDesplegable li a:hover {
+    color: rgb(253, 253, 253);
 }
