@@ -36,7 +36,7 @@
     align-items:center;
 }
 
-.button{
+/* .button{
     background: var(--background) ;
     font-size: var(--font-size-medium);
     transition:all 0.4s ease-in-out;
@@ -48,17 +48,17 @@
     background: var(--background-hover) ;
     transform: scale(1.03);
     color:white;
-}
+}*/
 
 .button.secondary{
-    background-color: white;
-    color:#120320;
+    background: transparent !important;
+    color:#ffffff;
+    border-color: transparent;
 }
 
 .button.secondary:hover{
     background: var(--background-hover);
     color: white;
-}
-
+} 
 
 

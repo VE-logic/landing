@@ -61,7 +61,7 @@ const Form = () => {
             <MdOutlineMailOutline className="contact__option-icon" />
             <h4>Email</h4>
             <h5>velogic2024@gmail.com</h5>
-            <a href="mailto:velogic2024@gmail.com" target="_blank" rel="noopener noreferrer">Envía un mensaje</a>
+              <a href="mailto:velogic2024@gmail.com" target="_blank" rel="noopener noreferrer">Envía un mensaje</a>
           </article>
           <article className="contact__option">
             <SiWhatsapp className="contact__option-icon" />

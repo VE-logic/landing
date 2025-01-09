@@ -14,7 +14,7 @@
 }
 
 .contact__option {
-    background: var(--background);
+    background: rgba(15, 15, 15);
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
@@ -23,8 +23,7 @@
 }
 
 .contact__option:hover {
-    background: rgba(245, 152, 71, 0.4);
-    border-color: var(--color-bg);
+    background: var(--background-hover);
     color: var(--color-bg)
 }
 
@@ -40,9 +39,9 @@
     color: rgb(255, 255, 255)
 }
 
-.contact__option a:hover {
-    color: var(--primary-color)
-}
+/* .contact__option a:hover {
+    color: red;
+} */
 
 .contact__whatsapp{
     cursor: pointer;

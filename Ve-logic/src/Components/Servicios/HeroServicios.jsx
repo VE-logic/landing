@@ -11,7 +11,10 @@ const HeroServicios = ({titulo, imagen, descripcion}) => {
                 <img className='imagenFondo' src={imagen} alt={titulo} />
                 <p>{descripcion}</p>
             </div>
+            
         </section>
+            
+        
     )
 }
 

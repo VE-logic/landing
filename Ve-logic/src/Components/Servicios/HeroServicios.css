@@ -1,8 +1,13 @@
+section{
+    height: auto;
+    max-width: 100%;
+}
 .hero-servicios{
     position:relative;
     padding: 4rem 2rem;
     text-align:center;
     background: var(--background) ;
+    height:100vh;
     color: #fff;
     overflow:hidden;
     display: flex;
