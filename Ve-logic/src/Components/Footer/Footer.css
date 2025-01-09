@@ -17,6 +17,7 @@
 
 .footer-container a:hover{
     color: #0A74DA;
+    cursor: pointer;
 }
 
 .footer-container img{
@@ -42,4 +43,8 @@
         display: block;
         margin-top: 10px;
     }
+        .footer-container a:hover {
+            color: #0A74DA;
+            cursor: pointer;
+        }
 }
