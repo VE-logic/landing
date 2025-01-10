@@ -1,16 +1,21 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 20px;
-    background-color: rgb(4, 26, 104);
-    color: white;
+    position:absolute;
+    width: 95vw;
+    padding:20px 0;
+    margin:10px 30px;
+    border-radius: 20px;
+    z-index: 100;
+    background-color: rgba(246, 247, 248, 0.464);
+    color: rgb(0, 0, 0);
 }
 
 .logo a {
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -27,4 +32,12 @@
 
 .social-media a:hover {
     color: rgb(76, 145, 249);
+}
+
+@media screen and (max-width: 1000px){
+    .header {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 20px;
+    }
 }

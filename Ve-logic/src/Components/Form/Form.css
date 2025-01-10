@@ -14,18 +14,19 @@
 }
 
 .contact__option {
-    background: rgba(15, 15, 15);
+    background: rgb(36, 1, 63);
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
+    margin:0px 30px;
 }
 
-.contact__option:hover {
+/* .contact__option:hover {
     background: var(--background-hover);
     color: var(--color-bg)
-}
+} */
 
 .contact__option-icon {
     font-size: 1.4rem;
@@ -39,9 +40,9 @@
     color: rgb(255, 255, 255)
 }
 
-/* .contact__option a:hover {
-    color: red;
-} */
+.contact__option a:hover {
+    color: var(--link-hover);
+}
 
 .contact__whatsapp{
     cursor: pointer;

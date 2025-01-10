@@ -10,10 +10,10 @@ const Header = () => {
       <Nav />
       <div className="social-media">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-facebook-f"></i>
+          <i className="fab fa-facebook-f">face</i>
         </a>
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-twitter"></i>
+          <i className="fab fa-twitter">tw</i>
         </a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-instagram"></i>
