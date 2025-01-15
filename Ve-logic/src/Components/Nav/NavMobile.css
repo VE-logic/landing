@@ -21,9 +21,9 @@
     background-color: rgb(0, 0, 0);
     border: 1px solid #ddd;
     position: absolute;
-    top: 50px;
+    top:50px;
     right: 0;
-    width: 200px;
+    width: 300px;
     z-index: 100;
 }
 

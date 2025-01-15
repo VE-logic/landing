@@ -1,3 +1,9 @@
+.footer{
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px;
+    
+}
 .footer-container{
     background-color: #1a1a1a;
     color: white;
@@ -7,7 +13,12 @@
     font-weight: 300;
     margin-top: 20px;
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;/* La columna del logo toma 1 fracción, las columnas internas 2 */
+    gap: 20px;/* Espaciado entre columnas */
+    width: 100%;
+    margin: 0 auto;/* Centrar el contenedor */
+    align-items: flex-start;/* Alineación vertical de las columnas */
+    
 }
 
 .footer-container a{
@@ -30,13 +41,33 @@
     margin-top: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+.container-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+    gap: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: var(--font-size-small);
+    text-align: center;
+
+}
+
+.footer-logo{
+    width:350px;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+@media screen and (max-width: 768px) {
     .footer-container{
         grid-template-columns: repeat(1, 1fr);
     }
 
     .footer-logo{
         padding-top: 20px;
+        width: 100%;
     }
     
     .container-columns{
