@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import './ServicioIndividual.css'
 
 
+
 const ServicioIndividual = ({titulo, subtitulo, imagen, descripcion}) => {
     return(
         <div className="servicio-card">

@@ -1,6 +1,7 @@
 // import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import { useState } from 'react';
+import './NavMobile.css';
 // import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -27,7 +28,7 @@ function NavMobile() {
                 <Navbar key={expand} expand={expand} className="bg-body-transparent m-3">
                     <Container fluid>
                         <Navbar.Brand href="#"></Navbar.Brand>
-                        <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleToggleOffcanvas} /> 
+                        <Navbar.Toggle className='buttonHamburg' aria-controls="offcanvasNavbar" onClick={handleToggleOffcanvas} /> 
                         <Navbar.Offcanvas
                             id="offcanvasNavbar"
                             aria-labelledby="offcanvasNavbarLabel"

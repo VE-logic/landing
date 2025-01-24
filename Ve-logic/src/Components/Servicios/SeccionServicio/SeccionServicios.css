@@ -2,7 +2,7 @@
     padding:2rem;
     text-align: center;
 }
-.servicios h2{
-    color: rgb(247, 246, 246);
+.servicios .SeccionServicios{
+    color: #310077 ;
     font-size: 2rem;
 }

@@ -30,7 +30,7 @@ const SeccionServicios =() => {
   
   return (
     <section className="servicios">
-      <h2>Nuestros Servicios</h2>
+      <h2 className='SeccionServicios'>Nuestros Servicios</h2>
       <div className="servicios-grid">
         {servicio.map(servicio => (
           <ServicioIndividual 

@@ -13,8 +13,10 @@
 
 .menus a {
     text-decoration: none;
-    color: rgb(1, 1, 1);
+    color: #310077;
     padding: 8px 15px;
+    font-weight: 500;
+    font-size: larger;
     transition: background-color 0.3s ease;
 }
 
