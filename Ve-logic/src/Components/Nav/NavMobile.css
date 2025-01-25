@@ -1,72 +1,17 @@
-.nav-mobile {
-    display: none;
-    /* Solo mostrar en móviles */
-    position: relative;
-}
-
-.menu-hamburguesa {
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin: 10px;
-}
-
-.mobile-menu {
-    display: none;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(0, 0, 0);
-    border: 1px solid #ddd;
-    position: absolute;
-    top:50px;
-    right: 0;
-    width: 300px;
-    z-index: 100;
-}
-
-.mobile-menu.open {
-    display: flex;
-}
-
-.submenu-link {
-    color: #ffffff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.submenu {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    list-style: none;
-    padding-left: 20px;
-    margin: 0;
-    background: #700909;
-    border-left: 2px solid #ddd;
-}
-
-.submenu.visible {
-    max-height: 200px;
-    /* Altura suficiente para los elementos del submenú */
-}
 
 .buttonHamburg{
     margin-right: 20px;
     cursor:pointer;
     font-size: 24px;
-    color: #ffffff;
     background: none;
     border: none;
     transition: color 0.2s;
 }
 
-.buttonHamburg:hover{
-    color: tranparent;
-    border:none !important;
-}
+
+
+
+
 
 .navbar-toggler:focus{
     text-decoration:none;
@@ -75,6 +20,26 @@
     box-shadow:none;
 
 }
+
+.btn-close{
+    font-size: 24px;
+    border: none;
+    transition: color 0.2s;
+    background-color: aquamarine;
+}
+
+.btn-close icon{
+    color: #ffffff;
+}
+
+.btn-close:hover{
+    color: #ffffff;
+    border: none;
+}
+
+
+
+
 /* #offcanvasNavbar{
     background-color: aqua; este es el desplegable de bootstrap
 } */

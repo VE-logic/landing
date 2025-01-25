@@ -1,12 +1,13 @@
 .footer{
-    background-color: #1a1a1a;
-    color: white;
+    background-color: var(--color-footer-container);
+    color: #350C6A;
     padding: 10px;
+    margin-top: 60px;
     
 }
 .footer-container{
-    background-color: #1a1a1a;
-    color: white;
+    /* background-color:var(--color-footer); */
+    color: #350C6A;
     padding: 10px;
     font-size: var(--font-size-small);
     font-family: var(--font-family);
@@ -22,7 +23,7 @@
 }
 
 .footer-container a{
-    color: white;
+    color: #350C6A;
     text-decoration: none;
 }
 
@@ -85,6 +86,7 @@
     .footer-container a{
         display: block;
         margin-top: 10px;
+        color:#350C6A
     }
         .footer-container a:hover {
             color: #0A74DA;

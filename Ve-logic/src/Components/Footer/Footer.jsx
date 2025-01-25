@@ -5,6 +5,7 @@ import imagen from '../../assets/imagenPrueba.png'
 const Footer = () => {
   return (
     <section className="footer">
+      
       <div className='footer-container'>
         <div className='footer-logo'>
           <img src={imagen} alt="Logo" width="50px" />

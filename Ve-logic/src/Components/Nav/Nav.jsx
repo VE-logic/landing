@@ -36,7 +36,7 @@ const Nav = () => {
                                 onMouseEnter={() => handleMouseEnter(index)}
                                 onMouseLeave={handleMouseLeave}
                             >
-                                <span>{menu.title}</span>
+                                <span className="navegacion">{menu.title}</span>
                                 <ul
                                     className={`menuDesplegable ${visibleIndex === index ? "visible" : ""
                                         }`}
@@ -45,7 +45,7 @@ const Nav = () => {
                                         <li key={subIndex}
                                         onClick={() => handleServicioClick(index, subIndex)}
                                         >
-                                            <Link to={submenu.path}>{submenu.title}</Link>
+                                            <Link className="navegacion" to={submenu.path}>{submenu.title}</Link>
                                         </li>
                                     ))}
                                 </ul>

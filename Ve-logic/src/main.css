@@ -14,13 +14,30 @@
 
 :root {
   /*Colores*/
-  --link-hover:#0A74DA;
-  --button-background:#ffffff;
-  --primary-color: #3b2f91;
-  --secondary-color: #089394;
-  --background: linear-gradient(135deg, #fd65c3 1%, #0D25B9 100%);
-  --background-hover: linear-gradient(105deg, #282956, #3b2f91, #089394);
-  --text-color: #1c1c1c;
+  --background: linear-gradient(10deg, #fa76ed 1%, #2c0764 100%);
+    --background-hover: linear-gradient(105deg, #6d3b9e, #2c0764);
+      --primary-color: #8F3491;
+      --secondary-color: #2c0764;
+      --text-color: #ffffff;
+      --link-color: #a56de2;
+      --link-hover: #c79af2;
+      --button-background: #350C6A;
+      --button-text-color: #ffffff;
+      --button-hover-background: linear-gradient(180deg, #732689, #2c0764);
+      --button-hover-text-color: #ffffff;
+      --color-card:#350C6A;
+      --color-footer-container:#c79af291;
+      /* --color-footer: #e3c6fe; */
+      --border-color: #a56de2;
+      --accent-color: #c79af2;
+      --text-light-color: #e0e0e0;
+
+      --error-color: #ff4d4d;
+      /* Rojo para errores */
+      --success-color: #4CAF50;
+      /* Verde para éxito */
+      --warning-color: #FFC107;
+      /* Amarillo para advertencias */
 
   /*Tipografía*/
 
@@ -69,29 +86,30 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+button, .button, .send{
+  border-radius: 9px ;
+  border: 2px solid transparent;
   padding: 0.6em 1.2em;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
-  color:#000000;
+  color:#e2e0e0;
   transition: border-color 0.25s;
   background: var(--button-background);
   font-size: var(--font-size-medium);
   transition: all 0.4s ease-in-out;
 }
 
-button:hover {
-  border-color: #ffffff;
-  background:var(--secondary-color);
+:where(button, .button, .send):hover {
+  border-color: transparent;
+  background:var(--button-hover-background);
   transform: scale(1.03);
   color: white;
 }
+
 .servicio-card, .proyecto-card
 {
-  background-color: rgb(40, 26, 131);
+  background-color: var(--color-card);
   padding: 1rem;
   border-radius: 15px;
   margin-bottom: 20px;

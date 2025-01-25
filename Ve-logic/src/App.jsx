@@ -9,6 +9,7 @@ import Footer from '../src/Components/Footer/Footer';
 import Inicio from './Pages/Home/Home';
 import Contacto from './Pages/Contacto/Contacto';
 import Servicios from './Pages/Servicios/Servicios';
+import WaveAnimation from './Components/Animations/WaveAnimation';
 
 const App = () => {
   const [servicioSeleccionado, setServicioSeleccionado] = useState('');
@@ -22,10 +23,10 @@ const App = () => {
           path="/servicios"
           element={<Servicios servicioSeleccionado={servicioSeleccionado} />}
         />
-        <Route path="/Proyectos" element={<Proyectos/>} />
+        <Route path="/proyectos" element={<Proyectos/>} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
-      
+      <WaveAnimation/>
       <Footer/>
       
     </Router>

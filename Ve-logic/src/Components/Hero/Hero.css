@@ -51,13 +51,13 @@
 }*/
 
 .button.secondary{
-    background: transparent !important;
+    background: transparent;
     color:#ffffff;
     border-color: transparent;
 }
 
 .button.secondary:hover{
-    background: var(--background-hover);
+    /* background: black !important; */
     color: white;
 } 
 

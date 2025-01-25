@@ -119,7 +119,7 @@ const Form = () => {
             ></textarea>
             {errors.message && <small className="error">{errors.message}</small>}
           </div>
-          <button type="submit" className="btn btn-primary">Enviar</button>
+          <button type="submit" className="send">Enviar</button>
           {successMessage && <p className="success">{successMessage}</p>}
         </form>
       </div>
